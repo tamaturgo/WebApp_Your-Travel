@@ -1,0 +1,189 @@
+/*Fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif ;
+}
+
+/*formatação Header*/
+header{
+    background:no-repeat center/cover url('../img/lago.jpg');
+    height: 70vh;
+    color:white;
+
+}
+header nav{
+    margin: 0;
+    padding: 0 15px;
+    display:flex;
+    justify-content: space-between;
+  
+}
+header nav ul{
+    list-style: none;
+}
+header nav ul {
+    display: flex;
+    flex-direction: row;
+}
+header nav ul li{
+    margin: 0px;
+    box-shadow: 1px 1px 1px #00142759;
+    padding: 0px 15px;
+    text-shadow: 1px 0.5px 4px #001427;
+}
+header nav ul li:hover{
+    background-color: #0014279f;
+    transition: all 0.5s;
+}
+.header-content{
+    max-width: 60%;
+    color:white;
+    margin: 8%;
+    text-shadow: 1px 1px 2px rgb(83, 83, 83);
+}
+h1{
+    font-size: 3rem;
+
+}
+.header-button{
+    color: black;
+    background: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 12pt;    
+    transition: 0.5s;
+    font-weight: bold;
+
+}
+.header-button:hover{
+    background: #0014279f;
+    color:white;
+    border-radius: 5px;
+
+}
+
+/*Content*/
+#mostPopular{
+    margin: 0% 3%;
+   
+}
+#mostPopular #title{
+    text-align: center;
+    color:black;
+    font-size: 2em;
+    font-weight: bold;
+    padding-top: 4%;
+    display: flex;
+    align-content: center;
+    text-indent: 1em;
+}
+#mostPopular #title #spam{
+    color: #EEAB01;
+    text-indent: .5em;
+}
+article{
+    display: flex;
+}
+article .bloco{
+    width: 30%;
+    margin: 1% 3%;
+    transition: all .5s;    
+}
+
+#mostPopular .bloco img{
+    width: 100%;
+    transition: all .5s;
+}
+#mostPopular .bloco img:hover{
+    filter: grayscale(0.6) blur(2px);
+    cursor: pointer;
+    z-index: 0;
+}
+#mostPopular .bloco P{
+    font-weight: bold;
+}
+
+#mostPopular .bloco div{
+    color: white;
+    background-color: #EEAB01;
+    position: relative;
+    width: 120px;
+    height: 30px;
+    top: 30px;
+    padding: 2%;
+    z-index: 2;
+}
+
+
+#services{
+    margin: 0px;
+    padding: 3%;
+    background: no-repeat center/cover url("../img/aviao.jpg");
+    color: white;
+
+}
+#services h2{
+    text-indent: 2em;
+    filter: grayscale(0);
+}
+
+
+/* Responsividade */
+
+@media (max-width:480px)  { /* smartphones, Android phones, landscape iPhone */ 
+    header nav ul{
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        margin: 0 auto;
+        width: 100%;
+        padding: 0;
+        background: #0014279f;
+        box-shadow: 0px -2px 0px #001427df;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    header nav ul li{
+      box-shadow: none;
+    }
+    header nav p{
+        width: 100%;
+        text-align: center;
+    }
+
+
+    
+    article{
+        flex-direction: column;
+    }
+    article .bloco{
+        width: 80%;
+        margin: 2% 10%;
+    }
+
+}
+@media (max-width:801px) and (min-width:481px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    body{
+        background: blueviolet;
+    }
+    
+    #mostPopular article{
+        flex-direction: column;
+    }
+    #mostPopular article .bloco{
+        width: 80%;
+        margin: 2% 10% ;
+    }
+}
+
+

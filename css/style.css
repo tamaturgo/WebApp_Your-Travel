@@ -18,6 +18,9 @@ header{
     color:white;
 
 }
+header nav p{
+    cursor: pointer;
+}
 header nav{
     margin: 0;
     padding: 0 15px;
@@ -37,6 +40,7 @@ header nav ul li{
     box-shadow: 1px 1px 1px #00142759;
     padding: 0px 15px;
     text-shadow: 1px 0.5px 4px #001427;
+    cursor: pointer;
 }
 header nav ul li:hover{
     background-color: #0014279f;
@@ -61,7 +65,7 @@ h1{
     font-size: 12pt;    
     transition: 0.5s;
     font-weight: bold;
-
+    cursor: pointer;
 }
 .header-button:hover{
     background: #0014279f;
@@ -134,6 +138,73 @@ article .bloco{
     text-indent: 2em;
     filter: grayscale(0);
 }
+#services article .bloco img{
+    width: 30%;
+    margin-bottom: -30px;
+    
+}
+#services article  a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: rgba(1, 39, 146, 0.726);
+    margin-top: 10px;
+    margin-bottom: 40px;
+    transition: all 0.5s;
+}
+#services article  a:hover{
+    background-color: rgba(1, 26, 95, 0.526);
+    box-shadow: 1px 1px 4px rgba(1, 20, 73, 0.685) inset;
+}
+#services article .bloco {
+    text-align: center;
+}
+
+/* MAPA */
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+
+#find-us{
+    padding: 50px 20%;
+  
+    position: relative;
+}
+#find-us #card{
+    
+    height: 300px;
+    background: rgba(1, 40, 146, 0.918);
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 15px rgba(0, 21, 66, 0.671);
+    position: absolute;
+    z-index: 99;
+
+    top: calc(50% - 150px);
+    left: calc(25% - 200px);
+}
+#card ul{
+    list-style: none;
+}
+#card ul li{
+    display: flex;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* Responsividade */
@@ -168,7 +239,7 @@ article .bloco{
     }
     article .bloco{
         width: 80%;
-        margin: 2% 10%;
+        margin: 5% 10%;
     }
 
 }

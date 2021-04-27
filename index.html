@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://unpkg.com/feather-icons"></script>
     <title>Your Travel</title>
 </head>
 <body>
@@ -31,49 +32,91 @@
             <div id="title">MAIS<div id="spam">POPULARES</div></div>
             <article>    
                 <div class="bloco">
-                    <div>R$1200,00</div>
+                    <div>R$12.359,90</div>
                     <img src="img/fuji.jpg" alt="imagem 1">
                     <p>MONTE FUJI, <spam style="color: #dd9f01;">JAPÃO</spam></p>
                 </div>
                 <div class="bloco">
-                    <div>R$1200,00</div>
-                    <img src="img/lagoItalia.jpg" alt="imagem 1">
-                    <p>LAGO DI BRAIES, <spam style="color: #dd9f01;">ITÁLIA</spam></p>
-                </div>
-                <div class="bloco">
-                    <div>R$1200,00</div>
+                    <div>R$6.799,90</div>
                     <img src="img/arizona.jpg" alt="imagem 1">
                     <p>GRAND CANYON, <spam style="color: #dd9f01;">EUA</spam></p>
                 </div>
+                <div class="bloco">
+                    <div>R$7.134,90</div>
+                    <img src="img/lagoItalia.jpg" alt="imagem 1">
+                    <p>LAGO DI BRAIES, <spam style="color: #dd9f01;">ITÁLIA</spam></p>
+                </div>
+                
             </article>
     </div>
 
     <div id="services">
         <h2>NOSSOS <spam style="color: #dd9f01;">SERVIÇOS</spam></h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac massa quis arcu ullamcorper facilisis sit amet quis dolor. Proin.</p>
+
         <article>
             <div class="bloco">
                
-                <img src="" alt="icon">
-                <h4>titulo</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac massa quis arcu ullamcorper.</p>
+                <img src="img/airplane.png" alt="icon">
+                <h4>Passagens Acessíveis</h4>
+                <p>Viage para lugares incríveis e com preços mais surpreendentes. Desfrute de aventuras sem desembolsar muito.</p>
+                <a href="#">Saiba Mais</a>
             </div>
             <div class="bloco">
-                <img src="" alt="icon">
-                <h4>titulo</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac massa quis arcu ullamcorper.</p>
+                <img src="img/guide.png" alt="icon">
+                <h4>Guias Turísticos</h4>
+                <p>Conheça lugares encantadores e encare novas aventuras acompanhado sempre por um profissional treinado.</p>
+                <a href="#">Saiba Mais</a>
             </div>
             <div class="bloco">
-                <img src="" alt="icon">
-                <h4>titulo</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac massa quis arcu ullamcorper.</p>
-            </div>
-            <div class="bloco">
-                <img src="" alt="icon">
-                <h4>titulo</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac massa quis arcu ullamcorper.</p>
+                <img src="img/hotel.png" alt="icon">
+                <h4>Hospedaria</h4>
+                <p>Contamos com diversos resorts espalhados pelo mundo, prontos para lhe acolher e garantir o seu conforto.</p>
+                <a href="#">Saiba Mais</a>
             </div>
         </article>
     </div>
+
+
+    <div id="find-us">
+        <div id="card">
+            <h3>Entre em Contato</h3>
+            <ul>
+                <li><i data-feather="mail"></i> <spam style="margin-left:15px ;">diogelestamaturgo@outlook.com</spam></li>
+                <li><i data-feather="map-pin"></i> <spam style="margin-left:15px ;">Centro, Manaus - AM</spam></li>
+                <li><i data-feather="phone"></i> <spam style="margin-left:15px ;">(92) 98765-4321</spam></li>
+        
+            </ul>
+        </div>
+
+        <div id="map"></div>
+
+
+
+    </div>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+        // The location of Uluru
+        const uluru = { lat: -3.1305793070745986, lng: -60.020672968466044 };
+        // The map, centered at Uluru 
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 16,
+            center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+        });
+        }
+
+
+
+        feather.replace()
+    </script>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?callback=initMap&libraries=&v=weekly"
+    async
+  ></script>
 </body>
 </html>

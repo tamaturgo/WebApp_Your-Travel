@@ -20,6 +20,14 @@ header{
 }
 header nav p{
     cursor: pointer;
+    position: relative;
+    text-indent: 3em;
+}
+header nav p img{
+    width: 40%;
+    position: absolute;
+    top: -65%;
+    left: -15%;
 }
 header nav{
     margin: 0;
@@ -227,13 +235,11 @@ article .bloco{
     header nav ul li{
       box-shadow: none;
     }
-    header nav p{
-        width: 100%;
-        text-align: center;
+ 
+    #mostPopular #title{
+        font-size: 1.5em;
+
     }
-
-
-    
     article{
         flex-direction: column;
     }
@@ -241,19 +247,61 @@ article .bloco{
         width: 80%;
         margin: 5% 10%;
     }
+    #services{
+        margin-bottom: 0;
+    }    
+    #find-us{
+        padding: 50px 0px;
+      
+    }
+    #find-us #card{
+        position: static;
+        width: 90%;
+        height: auto;
+        margin: 5%;
+        padding: 3%;
+        background: rgba(1, 40, 146, 0.918);
+        color: white;
+        box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.7);
+        text-align: center;
+        font-size: .8em;
+        border-radius: 5px;
+  
+
+    }
+
 
 }
 @media (max-width:801px) and (min-width:481px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
-    body{
-        background: blueviolet;
-    }
-    
     #mostPopular article{
         flex-direction: column;
     }
     #mostPopular article .bloco{
         width: 80%;
         margin: 2% 10% ;
+    }
+
+
+    #find-us #card{
+        background: rgba(1, 40, 146, 0.918);
+        color: white;
+        padding: 15px;
+        border-radius: 4px;
+        box-shadow: 1px 1px 15px rgba(0, 21, 66, 0.671);
+        position: absolute;
+        z-index: 99;
+        height: 300px;
+        width: 50%;
+        top:0;
+        left: 0;
+    }
+    #map {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50%;
+        height: 300px;    
+    
     }
 }
 

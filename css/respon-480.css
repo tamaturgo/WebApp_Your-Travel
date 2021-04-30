@@ -1,0 +1,75 @@
+
+
+/* Responsividade */
+
+@media (max-width:480px)  { /* smartphones, Android phones, landscape iPhone */ 
+    header nav ul{
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        margin: 0 auto;
+        width: 100%;
+        padding: 0;
+        background: #0014279f;
+        box-shadow: 0px -2px 0px #001427df;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    header nav ul li{
+      box-shadow: none;
+    }
+ 
+    #mostPopular #title{
+        font-size: 1.5em;
+
+    }
+    article{
+        flex-direction: column;
+    }
+    article .bloco{
+        width: 80%;
+        margin: 5% 10%;
+    }
+    #services{
+        margin-bottom: 0;
+    }    
+    #find-us{
+        padding: 0px 0px;
+      
+    }
+    #find-us #card{
+        position: static;
+        width: 96%;
+        height: auto;
+        margin: 2%;
+        padding: 10px 0px;
+        background: rgba(1, 40, 146, 0.918);
+        color: white;
+        box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.7);
+        text-align: center;
+        font-size: .8em;
+        border-radius: 5px;
+        display: block;
+        visibility: visible;
+    }
+    #buttonC{
+        display: none;
+    }
+
+    header nav p{
+        cursor: pointer;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        color: rgb(255, 255, 255);
+        text-indent: 0px;
+        font-size: 1.3em;
+        font-weight: bold;
+        margin-bottom: 0;
+        text-shadow: 0px 0px 25px black;
+    }
+    
+    
+}

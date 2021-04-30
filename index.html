@@ -5,22 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/respon-480.css">
+    <link rel="stylesheet" href="css/respon-800.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="https://unpkg.com/feather-icons"></script>
+    <script src="js/anim.js"></script>
     <title>Your Travel</title>
 </head>
 <body>
     <header>
         <nav>
             <p> YourTravel</p>
-            <ul>
-                <li>Home</li>
-                <li>Pacotes</li>
-                <li>Serviços</li>
-                <li>Login</li>
-                
-            </ul>
-
+        
         </nav>
         <div class="header-content">
             <h1>Mountain Backpacker</h1>
@@ -88,6 +84,9 @@
             </ul>
         </div>
 
+            <button id="buttonC" onclick="abrirCartao()"><i data-feather="user-plus"></i></button>
+     
+
         <div id="map"></div>
 
 
@@ -109,8 +108,6 @@
             map: map,
         });
         }
-
-
 
         feather.replace()
     </script>

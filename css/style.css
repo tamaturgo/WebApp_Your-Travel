@@ -23,12 +23,7 @@ header nav p{
     position: relative;
     text-indent: 3em;
 }
-header nav p img{
-    width: 40%;
-    position: absolute;
-    top: -65%;
-    left: -15%;
-}
+
 header nav{
     margin: 0;
     padding: 0 15px;
@@ -36,24 +31,7 @@ header nav{
     justify-content: space-between;
   
 }
-header nav ul{
-    list-style: none;
-}
-header nav ul {
-    display: flex;
-    flex-direction: row;
-}
-header nav ul li{
-    margin: 0px;
-    box-shadow: 1px 1px 1px #00142759;
-    padding: 0px 15px;
-    text-shadow: 1px 0.5px 4px #001427;
-    cursor: pointer;
-}
-header nav ul li:hover{
-    background-color: #0014279f;
-    transition: all 0.5s;
-}
+
 .header-content{
     max-width: 60%;
     color:white;
@@ -183,7 +161,7 @@ article .bloco{
     position: relative;
 }
 #find-us #card{
-    
+    visibility: hidden;
     height: 300px;
     background: rgba(1, 40, 146, 0.918);
     color: white;
@@ -192,9 +170,26 @@ article .bloco{
     box-shadow: 1px 1px 15px rgba(0, 21, 66, 0.671);
     position: absolute;
     z-index: 99;
-
     top: calc(50% - 150px);
     left: calc(25% - 200px);
+    
+}
+
+#buttonC{
+    background: rgba(1, 40, 146, 0.918);
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    z-index: 99;
+    padding: 10px;
+    border: none;
+    transition: all 0.3s;
+    box-shadow: 2px -2px 4px rgba(2, 0, 95, 0.822);
+    cursor: pointer;
+}
+#buttonC:hover{
+    background: rgba(255, 255, 255, 0.534);
+    color: rgba(1, 40, 146, 0.918);
 }
 #card ul{
     list-style: none;
@@ -215,94 +210,8 @@ article .bloco{
 
 
 
-/* Responsividade */
-
-@media (max-width:480px)  { /* smartphones, Android phones, landscape iPhone */ 
-    header nav ul{
-        position: fixed;
-        bottom: 0px;
-        left: 0px;
-        margin: 0 auto;
-        width: 100%;
-        padding: 0;
-        background: #0014279f;
-        box-shadow: 0px -2px 0px #001427df;
-        color: white;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    header nav ul li{
-      box-shadow: none;
-    }
- 
-    #mostPopular #title{
-        font-size: 1.5em;
-
-    }
-    article{
-        flex-direction: column;
-    }
-    article .bloco{
-        width: 80%;
-        margin: 5% 10%;
-    }
-    #services{
-        margin-bottom: 0;
-    }    
-    #find-us{
-        padding: 50px 0px;
-      
-    }
-    #find-us #card{
-        position: static;
-        width: 90%;
-        height: auto;
-        margin: 5%;
-        padding: 3%;
-        background: rgba(1, 40, 146, 0.918);
-        color: white;
-        box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.7);
-        text-align: center;
-        font-size: .8em;
-        border-radius: 5px;
-  
-
-    }
 
 
-}
-@media (max-width:801px) and (min-width:481px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
-    #mostPopular article{
-        flex-direction: column;
-    }
-    #mostPopular article .bloco{
-        width: 80%;
-        margin: 2% 10% ;
-    }
 
-
-    #find-us #card{
-        background: rgba(1, 40, 146, 0.918);
-        color: white;
-        padding: 15px;
-        border-radius: 4px;
-        box-shadow: 1px 1px 15px rgba(0, 21, 66, 0.671);
-        position: absolute;
-        z-index: 99;
-        height: 300px;
-        width: 50%;
-        top:0;
-        left: 0;
-    }
-    #map {
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 50%;
-        height: 300px;    
-    
-    }
-}
 
 

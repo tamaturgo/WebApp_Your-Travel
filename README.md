@@ -11,6 +11,6 @@ As imagens foram retiradas do site [unsplash](https://unsplash.com/s/photos/)
 
 ### Imagens
 
-![enter image description here](https://github.com/tamaturgo/YourTravel_Web-Aplicattion/blob/main/assets/desktop%20behavior.png?raw=true)
+![enter image description here](https://github.com/tamaturgo/WebApp_Your-Travel/blob/main/assets/desktop%20behavior.png?raw=true)
 
 
